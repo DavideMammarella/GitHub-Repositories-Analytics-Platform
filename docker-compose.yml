@@ -1,0 +1,37 @@
+version: '3.5'
+
+services:
+  app:
+    build: g2-backend
+    container_name: app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DB_SERVER=db
+      - POSTGRES_DB=g2-db
+      - POSTGRES_USER=g2
+      - POSTGRES_PASSWORD=g2
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    ports:
+      - "8080:8080"
+
+  db:
+    image: 'postgres:9.6-alpine'
+    container_name: db
+    environment:
+      - POSTGRES_USER=g2
+      - POSTGRES_PASSWORD=g2
+      - POSTGRES_DB=g2-db
+    volumes:
+      - postgresql-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U g2 -d g2-db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  postgresql-data:
+    external: true

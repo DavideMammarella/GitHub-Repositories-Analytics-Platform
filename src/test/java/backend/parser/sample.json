@@ -1,0 +1,42 @@
+[
+  {
+    "date": "Fri Oct 08 11:59:44 2021 -0700",
+    "body": " Update Public Suffix data.  RELNOTES=n/a PiperOrigin-RevId: 401822976",
+    "message": "AAA",
+    "author": "Google Java Core Libraries",
+    "modified_files": [
+      "android/guava/src/com/google/thirdparty/publicsuffix/PublicSuffixPatterns.java",
+      "guava/src/com/google/thirdparty/publicsuffix/PublicSuffixPatterns.java"
+    ],
+    "commit": "a43836125964e2be3119dced82b8bab466f278d1",
+    "added_files": [],
+    "deleted_files": []
+  },
+  {
+    "date": "Thu Oct 07 09:53:14 2021 -0700",
+    "body": " Suppress new findings for DoNotCall.  PiperOrigin-RevId: 401537101",
+    "message": "AAA",
+    "author": "Google Java Core Libraries",
+    "modified_files": [
+      "android/guava-tests/test/com/google/common/collect/AbstractIteratorTest.java",
+      "android/guava-tests/test/com/google/common/collect/ImmutableBiMapTest.java",
+      "android/guava-tests/test/com/google/common/collect/ImmutableRangeSetTest.java",
+      "android/guava-tests/test/com/google/common/collect/IteratorsTest.java",
+      "android/guava-tests/test/com/google/common/collect/SetsTest.java",
+      "android/guava-tests/test/com/google/common/collect/UnmodifiableIteratorTest.java",
+      "android/guava-tests/test/com/google/common/collect/UnmodifiableListIteratorTest.java",
+      "android/guava-tests/test/com/google/common/io/LittleEndianDataInputStreamTest.java",
+      "guava-tests/test/com/google/common/collect/AbstractIteratorTest.java",
+      "guava-tests/test/com/google/common/collect/ImmutableBiMapTest.java",
+      "guava-tests/test/com/google/common/collect/ImmutableRangeSetTest.java",
+      "guava-tests/test/com/google/common/collect/IteratorsTest.java",
+      "guava-tests/test/com/google/common/collect/SetsTest.java",
+      "guava-tests/test/com/google/common/collect/UnmodifiableIteratorTest.java",
+      "guava-tests/test/com/google/common/collect/UnmodifiableListIteratorTest.java",
+      "guava-tests/test/com/google/common/io/LittleEndianDataInputStreamTest.java"
+    ],
+    "commit": "3b3687c8a417288798b31e8464c3a5c8bbc96077",
+    "added_files": [],
+    "deleted_files": []
+  }
+]
